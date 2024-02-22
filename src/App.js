@@ -74,11 +74,11 @@ export default function App() {
     const winner = calculateWinner(board);
     if (winner !== null) {
       if (winner === 'O') {
-        return 10 - depth; // Favorable score for AI
+        return 10 - depth;
       } else if (winner === 'X') {
-        return depth - 10; // Unfavorable score for AI
+        return depth - 10;
       } else {
-        return 0; // Draw
+        return 0;
       }
     }
   
